@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Options | Auto Adjusting for Youtube </title>
+  <link rel="stylesheet" href="css/pure-min.css">
+  <style type="text/css">
+    h1 {
+      margin-left: 20px;
+      color: rgb(204, 24, 30);
+    }
+
+    select {
+      width: 100px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1><img src="icons/icon48.png" />Youtube Perferences</h1>
+  <form class="pure-form pure-form-aligned" id="options-form">
+    <fieldset>
+      <div class="pure-control-group">
+        <label for="quality">Video Qualtiy</label>
+        <select id="quality">
+          <option value="highres">Best</option>
+          <option value="hd1080">1080P</option>
+          <option value="hd720" selected="true">720P</option>
+          <option value="large">480P</option>
+          <option value="medium">360P</option>
+          <option value="small">240P</option>
+          <option value="default">Default</option>
+        </select>
+      </div>
+      <div class="pure-control-group">
+        <label for="wide">Player Size</label>
+        <select id="wide">
+          <option value="large">Large</option>
+          <option value="1" selected="true">Medium</option>
+          <option value="0">Small</option>
+        </select>
+      </div>
+    </fieldset>
+  </form>
+  <script type="text/javascript" src="options.js"></script>
+</body>
+</html>
